@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html class="no-js">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>LookForBus - Just a project of SoftSkill Lesson</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Importing fonts -->
+    <!-- Source Sans Pro -->
+    <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400i|Source+Sans+Pro:300,400,600,700"
+        rel="stylesheet">
+    <link rel="shortcut icon" type="image/ico" href="/favicon.ico" />
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,600,700" rel="stylesheet">
+
+    <!-- Importing CSSs -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/index/plugins/owl-carousel/owl.carousel.css">
+    <link rel="stylesheet" href="/index/plugins/magnific-popup/magnific-popup.css">
+    <link rel="stylesheet" href="/index/css/style.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+</head>
+
+<body id="body">
+
+    <!-- Navigation bar -->
+    <header class="hide-PC">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
+
+                <!-- The company name that is seen on the top of the page -->
+                <a class="navbar-brand" href="#">LookForBus</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto text-center text-lg-left">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Trang chủ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">Hướng dẫn</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#service">Về chúng tôi</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Donate</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- Navigation bar finished -->
+
+    <!-- Main body -->
+
+    <section class="section hide-PC">
+        <!-- Material form subscription -->
+        <div class="card">
+
+            <!--Card content-->
+            <h5>
+                <img class="d-block w-100" src="https://i0.wp.com/s1.uphinh.org/2020/06/24/Untitled-1.png"
+                    alt="Untitled-1.png" border="0" />
+            </h5>
+            <div class="card-body px-lg-5">
+
+                <!-- Form -->
+                <form class="text-center" style="color: #757575;" action="#!">
+
+                    <p>Ứng dựng tìm xe bus trong thành phố Đà Nẳng nhanh nhất</p>
+
+                    <p>
+                        <a href="" target="_blank">Xem hướng dẫn?</a>
+                    </p>
+
+                    <!-- Name -->
+                    <div class="md-form mt-3">
+                        <input type="text" class="form-control" id="start"
+                            placeholder="Nếu tên đường không được gợi ý, rất tiếc là không có tuyến xe bus nào qua đó cả">
+                        <label for="start">Tuyến đường bạn đang đứng</label>
+                    </div>
+
+                    <!-- E-mai -->
+                    <div class="md-form">
+                        <input type="text" class="form-control" id="end"
+                            placeholder="Nếu tên đường không được gợi ý, rất tiếc là không có tuyến xe bus nào qua đó cả">
+                        <label for="end">Bạn muốn tới đường</label>
+                    </div>
+
+                    <!-- Sign in button -->
+                    <button class="btn btn-outline-info btn-rounded btn-block z-depth-0 my-4 waves-effect" type="button"
+                        id="btnSearch">Tìm ngay</button>
+
+                </form>
+                <!-- Form -->
+
+            </div>
+
+        </div>
+        <!-- Material form subscription -->
+    </section>
+    <div class="only-mobile">
+        <h2 class="text-center text-success">Xin lỗi - ứng dụng chỉ khả dụng trên điện thoại</h2>
+    </div>
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="resultModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Các tuyến xe tìm được</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Importing Scripts -->
+    <script src="/index/plugins/jquery-2.1.1.min.js"></script>
+    <script src="/index/plugins/bootstrap/bootstrap.min.js"></script>
+    <script src="/index/plugins/owl-carousel/owl.carousel.min.js"></script>
+    <script src="/index/plugins/magnific-popup/jquery.magnific.popup.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"></script>
+    <script src="/index/js/main.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="/javascript/handleIndex.js"></script>
+
+</body>
+
+</html>
